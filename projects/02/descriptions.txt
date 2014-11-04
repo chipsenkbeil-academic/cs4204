@@ -1,0 +1,57 @@
+Written with VIM in Linux! 
+Written by Robert "Chip" Senkbeil! 
+
+How to compile:
+Simply type make when inside the directory containing my files.
+It produces a program called "prog" that can be executed.
+
+Files:
+main.cpp      (The main source file)
+camera.h      (The camera header file)
+camera.cpp    (The camera source file)
+robot.h       (The robot header file)
+robot.cpp     (The robot source file)
+light.h       (The light header file)
+light.cpp     (The light source file)
+
+New Information:
+There are currently two lights in the design, one blue light and one white
+light. These lights have the same y and z coordinates with an opposite x
+coordinate such that one light shines on the left side of the current
+facing of the robot and the other light shines on the right side. The
+current setup has the lights follow the robot and you can see the shine of
+the lights if you rotate around the robot slightly on any side. There
+should be some blue and some white glow on the red robot.
+
+The material is globally applied to the entire robot with a whitish-grey
+color.
+
+The texture is applied to the robot using the SOIL library (added in the
+lib_soil directory) to load the image found in the texture directory.
+
+Finally, a vetex array was used to render the robot by containing the
+twenty four verticies needed for a cube (drawing each side as a GL_QUAD).
+A standard cube is drawn and then scaled to form the different body parts
+unlike the previous homework where I specified every individual vertex.
+
+Old Information:
+Starts out in normal mode where clicking and dragging the mouse rotates
+the robot and the floor beneath the robot. The angles are locked to prevent
+too much rotation up or down and also lock if spun in one direction
+too much.
+
+To change into other modes, right-click to access the menu. The options
+available include normal mode (rotation), zoom mode (click and drag up and
+down to zoom in and out), pan mode (click and drag left and right to pan
+left and right), as well as modes for each body part to be able to rotate
+each piece of the robot.
+
+Keep in mind that I designed my panning such that after panning, rotating
+will rotate the robot rather than the new location of the camera (I wasn't
+sure what was required). This can be changed back really quickly in the
+camera.cpp file to rotate about the camera location at all times, but I
+wasn't sure what the requirement for rotation after panning was.
+
+Signed,
+Robert "Chip" Senkbeil (rcsvt)
+

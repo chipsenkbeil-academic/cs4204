@@ -1,0 +1,16 @@
+Name: Robert C. Senkbeil
+Course: CS 4204
+Homework: #7
+
+Tested with 64-bit linux.
+
+With this program, you can click and drag the mouse to rotate the
+image displayed.
+
+This uses the vertex shader to move the vertices based on a sin curve based
+on time and that results in a ripple-like effect. Furthermore, this uses
+the fragment shader to map the textures to the ripple in such a ways that
+the environment is mapped onto the water's surface and the leaf texture
+is mapped on top of the environment.
+
+

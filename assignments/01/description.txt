@@ -1,0 +1,35 @@
+Robert "Chip" Senkbeil
+
+* I used the C from "Chip" since that is what I go by.
+
+How to build: (outputs assignment1 program and uses GLUT and GL libraries)
+g++ -o assignment1 assignment1.cpp -lglut -lGL
+
+How to run:
+If within the directory containing the program, type './assignment1' without quotes.
+
+What it does:
+Renders a black figure wielding a black spear.
+The figure has yellow eyes and cheap goggles that are yellow.
+There is a yellow 'C' on the chest of the figure.
+The black figure is in front of a white canvas that is surrounded by a red border.
+
+List of where I used types:
+GL_POINTS was used for the eyes.
+GL_TRIANGLES was used for the tip of the spear.
+GL_TRIANGLE_FAN was used for the left arm.
+GL_TRIANGLE_STRIP was used for the right arm.
+GL_QUADS was used for the legs.
+GL_QUAD_STRIP was used for the face.
+GL_LINE_LOOP was used for the square around the eyes (supposed to be lab goggles).
+GL_POLYGON was used for the body.
+GL_LINES was used for the spear pole.
+GL_LINE_STRIP was used for the letter 'C' on the body.
+
+glColor was used for the white center QUAD that contains the ninja with spear
+along with the black and yellow colors used.
+
+glPointSize was used on the eyes.
+
+glLineWidth was used on the spear pole.
+
